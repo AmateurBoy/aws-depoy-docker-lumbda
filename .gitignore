@@ -1,0 +1,17 @@
+# node modules
+node_modules/
+
+# Лог-файлы
+*.log
+
+# Папки и файлы, создаваемые системой
+.DS_Store
+.idea/
+.vscode/
+
+# Личные настройки
+.env
+
+# Файлы сборки
+/dist
+/build
