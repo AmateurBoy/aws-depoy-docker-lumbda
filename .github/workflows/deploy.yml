@@ -19,7 +19,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::<account-id>:role/github-actions
+          role-to-assume: arn:aws:iam::794038211861:role/github-actions-lambda-role
           aws-region: eu-central-1
 
       - name: Login to Amazon ECR
@@ -27,7 +27,7 @@ jobs:
 
       - name: Build and push Docker image
         env:
-          ECR_REGISTRY: <account-id>.dkr.ecr.eu-central-1.amazonaws.com
+          ECR_REGISTRY: 794038211861.dkr.ecr.eu-central-1.amazonaws.com
           ECR_REPOSITORY: docker-lambda
           IMAGE_TAG: latest
         run: |
