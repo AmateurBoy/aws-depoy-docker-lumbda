@@ -1,0 +1,20 @@
+{
+  "name": "aws-depoy-docker-lumbda",
+  "version": "1.0.0",
+  "main": "my-lambda.ts",
+  "scripts": {
+    "build": "esbuild my-lambda.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/my-lambda.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "esbuild": "^0.25.2"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.149"
+  }
+}
