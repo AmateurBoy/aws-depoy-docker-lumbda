@@ -1,6 +1,6 @@
 {
   "name": "aws-depoy-docker-lumbda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "my-lambda.ts",
   "scripts": {
     "build": "esbuild my-lambda.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/my-lambda.js",
